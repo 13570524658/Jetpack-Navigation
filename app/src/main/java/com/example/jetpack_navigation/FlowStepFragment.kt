@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.codelabs.navigation
+package com.example.jetpack_navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,7 +22,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import com.example.jetpack_navigation.R
+import androidx.navigation.fragment.navArgs
 
 /**
  * Presents how multiple steps flow could be implemented.
@@ -37,8 +37,8 @@ class FlowStepFragment : Fragment() {
         setHasOptionsMenu(true)
 
         // TODO STEP 8 - Use type-safe arguments - remove previous line!
-//        val safeArgs: FlowStepFragmentArgs by navArgs()
-//        val flowStepNumber = safeArgs.flowStepNumber
+        val safeArgs: FlowStepFragmentArgs by navArgs()
+        val flowStepNumber = safeArgs.flowStepNumber
         // TODO END STEP 8
 
         return when (arguments?.getInt("flowStepNumber")) {

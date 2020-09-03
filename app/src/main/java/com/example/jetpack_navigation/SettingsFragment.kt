@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.codelabs.navigation
+package com.example.jetpack_navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
